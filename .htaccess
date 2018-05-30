@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^((.*)\.)?(mariadb\.pl)$ [NC]
+RewriteRule ^ https://mariadb.com/ [R=302,L,NE]
